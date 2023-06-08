@@ -60,6 +60,7 @@ public class Funcoes {
                 for (int i = 0; i < clientes.length; i++) {
                     System.out.println("Olá " + cliente[i].getNome());
                     System.out.println("Seu saldo atual é de R$ " + cliente[i].getSaldo());
+                    System.out.println("Seu limite é de R$ " + cliente[i].getLimite());
                     System.out.println("\nSelecione uma opção abaixo\n");
                     System.out.println("01. Depósito");
                     System.out.println("02. Saque");
@@ -101,6 +102,33 @@ public class Funcoes {
                             break;
                     }
                 }
+                break;
+
+            case 3:
+                System.out.println("---- Atualização de contas ----\n");
+                for (int i = 0; i < clientes.length; i++) {
+                    switch (cliente[i].getTipoConta()) {
+                        case 1:
+                            cliente[i].setLimite(0);
+                            break;
+
+                        case 2:
+                            cliente[i].setLimite(cliente[i].getSaldo());
+                            break;
+
+                        case 3:
+                            cliente[i].setLimite(cliente[i].getSaldo() * 1.50);
+                            break;
+
+                        case 4:
+                            cliente[i].setLimite(cliente[i].getSaldo() * 2);
+                            break;
+                    }
+
+                }
+
+                System.out.println("\nContas atualizadas com sucesso!\n");
+                System.out.println("---------------\n");
                 break;
         }
     }
