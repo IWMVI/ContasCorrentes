@@ -1,7 +1,7 @@
 ## Projeto de Controle de Clientes e Movimentações Financeiras
 
 Este é um projeto de controle de clientes e movimentações financeiras, desenvolvido em Java.
-O objetivo é permitir o cadastro de clientes, registrar suas movimentações de depósito e saque,
+<br>O objetivo é permitir o cadastro de clientes, registrar suas movimentações de depósito e saque,
 atualizar as contas de acordo com o tipo de conta e gravar os dados em um arquivo de saída.
 
 ## Funcionalidades
@@ -38,9 +38,9 @@ Java JDK (versão compatível com o projeto 17+)
 
 ## Bibliotecas e Tecnologias Utilizadas
 
-Linguagem de programação: Java
-IDE: Visual Studio Code
-Bibliotecas externas: Nenhuma
+- Linguagem de programação: Java
+- IDE: Visual Studio Code
+- Bibliotecas externas: Nenhuma
 
 ## Contribuição
 
