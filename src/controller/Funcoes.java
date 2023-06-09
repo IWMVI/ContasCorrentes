@@ -1,5 +1,8 @@
 package controller;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
@@ -129,6 +132,41 @@ public class Funcoes {
 
                 System.out.println("\nContas atualizadas com sucesso!\n");
                 System.out.println("---------------\n");
+                break;
+
+            case 4:
+                for (Clientes clientes : cliente) {
+                    System.out.println("Nome: " + clientes.getNome());
+                    System.out.println("Tipo de conta: " + clientes.getTipoConta());
+                    System.out.println("Código da conta: " + clientes.getCodConta());
+                    System.out.println("Saldo em conta: " + clientes.getSaldo());
+                    System.out.println("Limite atual: " + clientes.getLimite());
+                    System.out.println("\n--------------\n");
+                }
+
+                break;
+
+            case 5:
+                System.out.println("---- Gravação de dados ----\n");
+                System.out.print("Informe o nome do arquivo: ");
+                String nomeArquivo = sc.nextLine();
+                sc.next();
+
+                String arquivo = nomeArquivo + ".txt";
+                try (BufferedWriter escrita = new BufferedWriter(new FileWriter(arquivo))) {
+                    for (Clientes clientes : cliente) {
+                        escrita.write("Nome: " + clientes.getNome() + "\n");
+                        escrita.write("Tipo de conta: " + clientes.getTipoConta() + "\n");
+                        escrita.write("Código da conta: " + clientes.getCodConta() + "\n");
+                        escrita.write("Saldo em conta: " + clientes.getSaldo() + "\n");
+                        escrita.write("Limite atual: " + clientes.getLimite() + "\n");
+                        escrita.write("\n--------------\n");
+                        escrita.newLine();
+                    }
+                    System.out.println("Dados gravados com sucesso!");
+                } catch (IOException e) {
+                    System.out.println("Erro ao gravar arquivos!");
+                }
                 break;
         }
     }

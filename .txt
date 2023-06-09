@@ -1,0 +1,24 @@
+Nome: Marta
+Tipo de conta: 1
+Código da conta: 4735
+Saldo em conta: 7000.0
+Limite atual: 0.0
+
+--------------
+
+Nome: Petz
+Tipo de conta: 4
+Código da conta: 6305
+Saldo em conta: 50000.0
+Limite atual: 100000.0
+
+--------------
+
+Nome: Wallace
+Tipo de conta: 2
+Código da conta: 10016
+Saldo em conta: 500.0
+Limite atual: 500.0
+
+--------------
+
