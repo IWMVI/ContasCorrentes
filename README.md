@@ -23,7 +23,7 @@ O projeto oferece as seguintes funcionalidades:
 01. Clone o repositório do projeto em sua máquina local:
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-projeto.git
+git clone https://github.com/IWMVI/ContasCorrentes.git
 ```
 02. Certifique-se de ter o Java JDK instalado em sua máquina.
 
